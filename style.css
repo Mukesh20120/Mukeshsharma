@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&family=Source+Code+Pro:ital,wght@1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    position: absolute;
+    background-color:rgb(164, 160, 160);
+    width: 180px;
+    font-family: 'Roboto Mono', monospace;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding: 10px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 23px;
+    padding: 20px 0;
+}
+.sidebar nav ul{
+   margin-top: 30px;
+}
+.sidebar nav li a{
+   text-decoration: none;
+   color: black;
+}
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+.container{
+    display: flex;
+}
+
+.infocontainer{
+ /* background-color: green; */
+ height: 54vh;
+ width: 80vw;
+ display: flex;
+ margin: 128px auto;
+ justify-content: space-around;
+}
+
+.devinfo{
+    display: flex;
+   justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.devpic img{
+    height: 54vh;
+}
+
+.hello{
+    font-size: 33px;
+}
+.name{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+.about{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.btn{
+        padding: 4px 9px;
+        margin: 0px 3px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        background-color: dodgerblue;
+        cursor: pointer;
+}
+.btn:hover{
+    color: dodgerblue;
+    background-color: white;
+}
+
+.information{
+    padding: 50px;
+}
+
+/*************************************************************************/
+/*contact form style here*/
+.contactform{
+    padding: 0 40px;
+    padding-top: 120px;
+    font-family: 'Roboto Mono', monospace;
+}
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+}
+.contactform form div{
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 2px;
+}
+
+#emailHelp{
+    font-size: 10px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+#form-check{
+    flex-direction: row;
+}
+#isclient.form-check-input{
+    width: 14px;
+    margin: 3px 0;
+}
+.sidebar_go{
+    transform: translate(-180px, 0px);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+    margin-left: 130px;
+}
+/******************************************************************************************/
+/*******my Intro *********************/
+@media (max-width: 774px){
+
+    .devpic{
+        display: none;
+    }
+}
